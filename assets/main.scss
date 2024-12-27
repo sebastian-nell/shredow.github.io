@@ -6,58 +6,91 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: #202020;
+    color: #fff;
   }
   
 .site-logo {
-    width: 100px; /* Adjust size as needed */
+    width: 250px; /* Adjust size as needed */
   }
   
-  .site-header {
-    position: relative;
-    padding-top: 100px; /* Leave space for the logo */
+.site-header {
     border-bottom: 0px;
+    border-top: 0px;
+    padding: 20px;
+  }
+.site-header img {
+   width: 400px;
+   display: block;
+   margin-left: 0;
   }
 
-  .hero {
-    text-align: left;
-    margin: 100px auto;
-  }
-  
-  .hero h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5em;
-    font-weight: bold;
-  }
-  
-  .hero p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2em;
-    color: #666;
-  }
-  
-  .contact-block {
-    text-align: left;
-    margin: 50px auto;
-    font-family: 'Montserrat', sans-serif;
-  }
-  
-  .contact-block h2 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-  }
-  
-  .contact-block a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .site-footer {
-    font-family: 'Montserrat', sans-serif;
-    border-top: 0px;
-  }
-  
-  .site-footer a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
+.page-content {
+  padding: 20px;
+  flex: 0;
+}
+
+  /* Hero Section */
+.hero {
+  text-align: left;
+  padding: 50px 20px;
+}
+
+.hero h1 {
+  font-size: 4vw; /* Responsive size */
+  font-weight: 400;
+  line-height: 0.9; /* Line spacing */
+  letter-spacing: -0.042em; /* Letter spacing */
+  color: #ffffff;
+  margin: 0;
+}
+
+.hero h1 .highlight {
+  font-weight: 700;
+  color: #6f70db;
+  background: transparent;
+}
+
+.hero .subheadline {
+  font-size: 1rem; /* Responsive size */
+  color: #ffffff;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.hero .subheadline a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.hero .subheadline a:hover {
+  color: #6f70db;
+}
+
+.hero .divider {
+  border: none;
+  border-top: 1px solid #ffffff; /* White dividing line */
+  width: 100%; /* Matches the width of the text above */
+  max-width: 500px; /* Optional max-width for responsiveness */
+  margin-top: 20px;
+}
+.site-footer {
+  text-align: left;
+  padding: 20px;
+  border-top: 0px;
+  font-size: 0.875rem; /* Responsive size */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.site-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+}
+
+.site-footer a:hover {
+  color: #6f70db;
+}
