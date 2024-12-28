@@ -15,6 +15,7 @@
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
   --spacing-xlarge: 4rem;
+  --spacing-xxlarge: 12rem;
   --font-base: 15px;
   --color-white: #ffffff;
   --color-purple: #6f70db;
@@ -29,11 +30,15 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem; /* Default font size for body text */
   line-height: 1.6;
-  background-color: var(--color-black);
-  /*background: linear-gradient(to top, var(--color-black), var(--color-background));*/
+  /*background-color: var(--color-black);*/
+  background: linear-gradient(to top, var(--color-black), var(--color-background));
   color: var(--color-white);
   padding: var(--spacing-medium);
 }
@@ -65,7 +70,7 @@ a:hover {
 .site-header {
   padding: var(--spacing-medium);
   border: none;
-  margin-bottom: var(--spacing-xlarge);
+  margin-bottom: var(--spacing-xxlarge);
 }
 
 .site-header img {
@@ -83,8 +88,7 @@ a:hover {
 .hero h1 {
   font-size: 3.5rem; /* Base size for desktop */
   font-weight: 400;
-  line-height: 0.9;
-  letter-spacing: -0.042em;
+  line-height: 1;
   color: var(--color-white);
   margin: 0;
 }
@@ -101,15 +105,28 @@ a:hover {
   line-height: 1.5;
 }
 
-.hero .divider {
-  border: none;
-  border-top: 1px solid var(--color-grey);
-  width: 100%;
-  max-width: 600px;
-  margin-top: var(--spacing-medium);
+/* The site container holds the header and main content */
+.site-container {
+  flex: 1; /* Allow this section to grow and take up available space */
+  display: flex;
+  flex-direction: column;
+}
+/* Footer */
+.site-footer {
+  text-align: left;
+  color: var(--color-grey);
+  padding: var(--spacing-medium);
+  font-size: 0.875rem;
 }
 
-/* Responsive Adjustments for Hero */
+.site-footer .divider {
+  border: none;
+  border-top: 1px solid var(--color-grey);
+  width: 214px;
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 3rem; /* Adjust font size for mobile */
@@ -119,12 +136,8 @@ a:hover {
     font-size: 1rem; /* Adjust subheadline size for mobile */
     line-height: 1.4;
   }
-}
 
-/* Footer */
-.site-footer {
-  text-align: left;
-  color: var(--color-grey);
-  padding: var(--spacing-medium);
-  font-size: 0.875rem;
+  .site-footer .divider {
+    width: 185px;
+  }
 }
