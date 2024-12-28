@@ -15,10 +15,12 @@
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
   --spacing-xlarge: 4rem;
-  --font-base: 16px;
+  --font-base: 15px;
   --color-white: #ffffff;
   --color-purple: #6f70db;
   --color-background: #202020;
+  --color-black: #000000;
+  --color-grey: #d9d9d9;
 }
 
 /* Base Styles */
@@ -30,7 +32,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem; /* Default font size for body text */
   line-height: 1.6;
-  background-color: var(--color-background);
+  background-color: var(--color-black);
+  /*background: linear-gradient(to top, var(--color-black), var(--color-background));*/
   color: var(--color-white);
   padding: var(--spacing-medium);
 }
@@ -42,8 +45,8 @@ h1, h2, h3 {
 
 /* Links */
 a {
-  color: var(--color-white);
-  text-decoration: none;
+  color: var(--color-grey);
+  text-decoration: underline;
   transition: color 0.3s ease;
 }
 
@@ -54,7 +57,7 @@ a:hover {
 /* Responsive Layout */
 @media (max-width: 768px) {
   html {
-    font-size: 14px; /* Smaller base font size for mobile */
+    font-size: 13px; /* Smaller base font size for mobile */
   }
 }
 
@@ -93,14 +96,14 @@ a:hover {
 
 .hero .subheadline {
   font-size: 1rem; /* Base size for desktop */
-  color: var(--color-white);
+  color: var(--color-grey);
   margin-top: var(--spacing-large);
   line-height: 1.5;
 }
 
 .hero .divider {
   border: none;
-  border-top: 1px solid var(--color-white);
+  border-top: 1px solid var(--color-grey);
   width: 100%;
   max-width: 600px;
   margin-top: var(--spacing-medium);
@@ -121,6 +124,7 @@ a:hover {
 /* Footer */
 .site-footer {
   text-align: left;
+  color: var(--color-grey);
   padding: var(--spacing-medium);
   font-size: 0.875rem;
 }
