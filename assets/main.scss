@@ -52,7 +52,7 @@ h1, h2, h3 {
     padding: 20px;
   }
 .site-header img {
-   width: 400px;
+   width: 330px;
    display: block;
    margin-left: 0;
   }
@@ -91,15 +91,11 @@ h1, h2, h3 {
   transition: color 0.3s ease;
 }
 
-.hero .subheadline a:hover {
-  color: #6f70db;
-}
-
 .hero .divider {
   border: none;
   border-top: 1px solid #ffffff; /* White dividing line */
   width: 100%; /* Matches the width of the text above */
-  max-width: 500px; /* Optional max-width for responsiveness */
+  max-width: 600px; /* Optional max-width for responsiveness */
   margin-top: 20px;
 }
 .site-footer {
@@ -109,14 +105,14 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.site-footer a {
+a {
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s ease;
 
 }
 
-.site-footer a:hover {
+a:hover {
   color: #6f70db;
 }
 
