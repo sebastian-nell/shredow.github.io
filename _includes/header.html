@@ -1,16 +1,7 @@
 <header class="site-header" role="banner">
-  <div class="wrapper">
-
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-  
+    
     <a href="{{ site.baseurl }}/">
-      <img src="{{ site.baseurl }}assets/shredow-logo-svg.svg" alt="Shredow Logo">
+      <img src="{{ site.baseurl }}assets/shredow-logo-svg_v01.svg" alt="Shredow Logo">
     </a>
 
-    {%- if page_paths -%}
-      <nav class="site-nav">
-      </nav>
-    {%- endif -%}
-  </div>
-</header>
+ </header>
